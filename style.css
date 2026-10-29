@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #0b1120;
+  color: #f1f5f9;
+  line-height: 1.6;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 8%;
+  background: #111c30;
+  border-bottom: 1px solid #24334c;
+}
+
+header h2 {
+  color: #4ade80;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin-left: 18px;
+}
+
+nav a:hover {
+  color: #4ade80;
+}
+
+.hero {
+  text-align: center;
+  padding: 90px 20px;
+  background: linear-gradient(135deg, #111c30, #12352e);
+}
+
+.hero h1 {
+  font-size: clamp(30px, 5vw, 48px);
+  color: #4ade80;
+  margin: 15px 0;
+}
+
+.hero p {
+  margin-bottom: 22px;
+}
+
+.tag {
+  color: #4ade80;
+  letter-spacing: 3px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 22px;
+  background: #4ade80;
+  color: #07111c;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+main {
+  max-width: 1100px;
+  margin: auto;
+  padding: 45px 20px;
+}
+
+section h2 {
+  margin-bottom: 22px;
+}
+
+#quiz {
+  margin-top: 55px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fit, minmax(220px, 1fr)
+  );
+  gap: 20px;
+}
+
+.card, .quiz-box {
+  background: #111c30;
+  border: 1px solid #26364d;
+  border-radius: 12px;
+  padding: 22px;
+}
+
+.card h3 {
+  color: #4ade80;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 15px;
+}
+
+.quiz-box button.option {
+  display: block;
+  width: 100%;
+  text-align: left;
+  margin-top: 12px;
+  padding: 12px;
+  background: #1e293b;
+  color: white;
+  border: 1px solid #475569;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.quiz-box button.option:hover {
+  border-color: #4ade80;
+}
+
+.quiz-box button:disabled {
+  cursor: default;
+  opacity: 0.8;
+}
+
+#result {
+  margin-top: 15px;
+  color: #4ade80;
+}
+
+#next-btn {
+  margin-top: 18px;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  background: #111c30;
+  color: #94a3b8;
+}
+
+@media (max-width: 600px) {
+  header {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav a {
+    margin: 0 8px;
+  }
+
+  .hero {
+    padding: 60px 16px;
+  }
+}
